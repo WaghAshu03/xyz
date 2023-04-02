@@ -1,0 +1,122 @@
+@import "@/styles/_config.scss";
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  height: $NavbarHeight;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 1rem 0rem;
+  user-select: none;
+  // background-color: red;
+
+  @media (min-width: 768px) {
+    width: 90vw;
+  }
+
+  @media (min-width: 992px) {
+    width: 85vw;
+  }
+
+  @media (min-width: 1200px) {
+    width: 80vw;
+  }
+}
+
+.Logo {
+  font-family: $Exo2Font;
+  color: $primary-purple;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-decoration: none;
+}
+
+.NavLinks {
+  margin-left: auto;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  a {
+    text-decoration: none;
+    color: $dull-black;
+    font-family: $Exo2Font;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    margin: 0rem 1.5rem;
+  }
+
+  @media (max-width: 800px) {
+    // display: none;
+  }
+}
+
+.menu-btn {
+  // display: none;
+  width: 50px;
+  height: 50px;
+  // background-color: #f00;
+  border-radius: 50%;
+
+  position: inherit;
+  // bottom: 0.5rem;
+  right: 1.5vw;
+  z-index: 999;
+
+  // @media only screen and (max-width: 800px) {
+  //   display: block;
+  // }
+  transform: translateY(-10%) translateX(50vw);
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2.5px;
+  background-color: #222;
+}
+
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-btn span:before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span:after {
+  transform: translateY(5px);
+}
+
+.menu-btn_active span {
+  height: 0;
+}
+
+.menu-btn_active span:before {
+  transform: rotate(45deg);
+}
+
+.menu-btn_active span:after {
+  transform: rotate(-45deg);
+}
