@@ -18,15 +18,15 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar />
-        <div className={styles.about + " container"}>
-          {/* <h1>ActualOne Protocol</h1> */}
+        {/* <div className={styles.about + " container"}>
+          <h1>ActualOne Protocol</h1>
           <hr />
           Actual01 offers a collaborative bounty system that incentivizes
           builders, while also building personalized proof-of-work profiles that
           connect individuals with opportunities in the web3 ecosystem.
           <hr />
           <br />
-          {/* Mission */}
+          
           <h2>🧭 Mission</h2>
           <hr />
           <p>
@@ -75,8 +75,8 @@ export default function Home() {
             steering the early development of the protocol and creating valuable
             applications on top of it.
           </p>
-          {/*  */}
-        </div>
+          
+        </div> */}
       </main>
     </>
   );
