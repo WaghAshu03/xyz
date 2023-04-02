@@ -19,14 +19,16 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar />
         <div className={styles.about + " container"}>
-          <h1>ActualOne Protocol</h1>
+          {/* <h1>ActualOne Protocol</h1> */}
           <hr />
           Actual01 offers a collaborative bounty system that incentivizes
           builders, while also building personalized proof-of-work profiles that
           connect individuals with opportunities in the web3 ecosystem.
           <hr />
+          <br />
           {/* Mission */}
-          <h2>Mission</h2>
+          <h2>🧭 Mission</h2>
+          <hr />
           <p>
             Despite the scattered opportunities and lack of execution due to
             expertise in the past, Actual01 now provides a collaborative
