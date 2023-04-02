@@ -20,11 +20,11 @@ const Navbar = () => {
         <br />
         Protocol
       </Link>
-      <div className={styles.NavLinks}>
+      {/* <div className={styles.NavLinks}>
         <Link href={NavLinks[router.pathname === "/" ? 1 : 0].href}>
           {NavLinks[router.pathname === "/" ? 1 : 0].title}
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
