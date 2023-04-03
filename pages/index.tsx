@@ -9,7 +9,10 @@ export default function Home() {
     <>
       <Head>
         <title>ActualOne Protocol</title>
-        <meta name="description" content="Description" />
+        <meta
+          name="description"
+          content="Hey Bro! Make sure you drink water and stay hydrated while you are busy building"
+        />
         <meta
           name="keywords"
           content="actualone, actual01, actual 101, collaboration, bounty, protocol"
